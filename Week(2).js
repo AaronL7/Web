@@ -1,0 +1,10 @@
+# Web
+
+var express = require('express');
+var app = express();
+app.get("/",(req,res)=>{
+    res.send("Hello world")
+})
+app.listen(3000,()=>{
+    console.log('in browser type http://localhost:3000/')
+})
