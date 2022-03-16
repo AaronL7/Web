@@ -3,8 +3,7 @@ var path = require('path')
 var app = express()
 
 app.use((req,res,next)=>{
-    console.log("request time"+ new Date().toLocaleDateString())
-    console.log(req.method + ":" + req.url)
+    console.log(req.method + ":" + req.url +" " +new Date().toLocaleDateString())
     next()
 })
 
