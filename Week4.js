@@ -2,6 +2,7 @@ var express = require("express")
 var path = require('path')
 var app = express()
 
+app.use(logger('dev'))
 app.use((req,res,next)=>{
     console.log(req.method + ":" + req.url +" " +new Date().toLocaleDateString())
     next()
