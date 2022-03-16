@@ -24,6 +24,19 @@ app.listen(3000,()=>{
 })
 
 
+##todoRouter (已刪除)
+todoRouter.get('/',(req,res)=>{
+    res.send(tasks);
+})
+
+todoRouter.get('/:id',(req,res)=>{
+    id = req.params.id
+    res.send(id)
+})
+
+app.use('/task',todoRouter);
+
+
 =============================================================
 ## data.js
 
