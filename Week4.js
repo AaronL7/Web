@@ -22,7 +22,7 @@ app.listen(3000,()=>{
 
 
 
-## Data.js
+## data.js
 
 var tasks=[
     {title:"clean the house"},
