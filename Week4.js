@@ -68,3 +68,20 @@ module.exports= {tasks,users}
     Hello world 2022
 </body>
 </html>
+
+
+=============================================================
+ ## tasks
+
+var express = require('express')
+var router = express.Router();
+var data = require('./data')
+router.get('/',(req,res)=>{
+    res.send(data.tasks);
+})
+router.get('/:id',(req,res)=>{
+    id = req.params.id
+    res.send(id)
+})
+
+module.exports = router
