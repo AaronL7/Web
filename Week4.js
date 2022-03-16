@@ -19,3 +19,20 @@ app.get("/", (req,res)=>{
 app.listen(3000,()=>{
     console.log("server is listening http://localhost:3000")
 })
+
+
+
+## Data.js
+
+var tasks=[
+    {title:"clean the house"},
+    {title:"reading an article"},
+    {title:"do nothing"}
+]
+
+var users=[
+    {name: "Amy"},
+    {name: "Lucy"},
+    {name: "Kat"}
+]
+module.exports= {tasks,users}
